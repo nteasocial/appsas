@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   let [count, setCount] = useState(0)
   useEffect(()=>{
-    window.parent.postMessage(count, 'http://localhost:3000');
+    window.parent.postMessage(count, 'https://parentapp.netlify.app/');
   },[count])
   return (
     <>
